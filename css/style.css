@@ -7,9 +7,10 @@
 
 body{
     min-height: 100vh;
-    background: url("assets/background.jpg") no-repeat;
     background-size: cover;
+    background-color: #08d4a4;
     background-position: center;
+    border: solid 25px #363535;
 }
 
 .header{
@@ -61,6 +62,7 @@ body{
 .name{
     font-size: 48px;
     position: absolute;
+    color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -74,9 +76,9 @@ body{
   }
 
 .gandg{
-    font-weight: 100;
     font-size: 20px;
     position: absolute;
+    color: white;
     transform: translate(-50%,-50%);
     animation: righttoLeft 3s 1;
     top: 55%;
@@ -91,19 +93,12 @@ body{
 
 .about{
     width: 100%;
-    padding: 200px 0px;
-    background-color: darkgray;
-    top: 40%;
+    padding-top: 250px;
 
   }
   .about img{
     height: auto;
     width: 420px;
-  }
-
-  .about-me{
-    padding-left: 20px;
-    width: 550px;
   }
 
   .main{
@@ -131,9 +126,9 @@ body{
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
     padding: 30px;
     padding-bottom: 10px;
+    padding-top: 220px;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     max-width: 100%;
@@ -279,3 +274,19 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
 }
+
+.date{
+    text-align: center;
+    color: black;
+    background-color: pink;
+}
+
+.zoom1 {
+    transition: transform .2s; /* Animation */
+    float: left;
+  }
+  
+  .zoom1:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    margin: 0 auto;
+  }
